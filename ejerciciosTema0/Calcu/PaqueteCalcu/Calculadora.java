@@ -1,4 +1,5 @@
-package Calcu;
+package PaqueteCalcu;
+;
 
 public class Calculadora {
 	
@@ -8,8 +9,5 @@ public class Calculadora {
 	
 	public int suma (int valor1, int valor2) {
 		return valor1 + valor2;
-	}
-	
-	public static void main (String args []) {
 	}
 }
