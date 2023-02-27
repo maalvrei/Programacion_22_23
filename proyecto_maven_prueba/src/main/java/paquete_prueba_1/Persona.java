@@ -110,4 +110,10 @@ public class Persona {
 		this.peso = peso;
 	}
 	
+	public static void main (String args []) {
+		Persona p1 = new Persona ();
+		System.out.println(p1.toString());
+		Persona p2 = new Persona ();
+		System.out.println(p2.toString());
+	}
 }
