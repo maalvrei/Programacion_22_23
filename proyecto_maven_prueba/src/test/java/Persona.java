@@ -1,6 +1,10 @@
-package paquete_prueba_1;
+
 import java.util.Random;
+
+import org.junit.jupiter.api.Test;
 public class Persona {
+	
+	
 	
 	private String nombre;
 	private int edad;
@@ -11,6 +15,7 @@ public class Persona {
 	private double altura;
 	
 	Persona () {
+		
 		this.sexo = SEXO_POR_DEFECTO;
 	}
 	
@@ -28,7 +33,12 @@ public class Persona {
 		this.altura = altura;
 	}
 	
+	@Test
+	
 	public static int calcularImc (double peso, double altura) {
+		
+		
+		
 		final int ideal = -1;
 		final int porDebajo = 0;
 		final int sobrepeso = 1;
@@ -92,6 +102,8 @@ public class Persona {
 		this.nombre = nombre;
 	}
 	
+	@Test
+	
 	public void setEdad (int edad) {
 		this.edad = edad;
 	}
@@ -108,6 +120,8 @@ public class Persona {
 		this.peso = peso;
 	}
 	
+	
+	@Test
 	public static void main (String args []) {
 		Persona p1 = new Persona ();
 		System.out.println(p1.toString());
