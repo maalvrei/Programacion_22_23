@@ -1,7 +1,5 @@
 package paquete_prueba_1;
 
-import PaqueteCalcu.Calculadora;
-
 public class PruebaCalculadora {
 	
 	public static void main (String args []) {
