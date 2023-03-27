@@ -24,4 +24,8 @@ public class Perro extends Animal {
 		return "nombre perro" + nombre;
 	}
 	
+	protected Object clone() throws CloneNotSupportedExcepcion {
+		
+	}
+	
 }
