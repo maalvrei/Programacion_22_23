@@ -4,7 +4,7 @@ public class Testing {
 	
 	
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws CloneNotSupportedException {
 		Perro perrete = new Perro("testPerro1");
 		System.out.println(perrete);
 		cambiarPerro(perrete);

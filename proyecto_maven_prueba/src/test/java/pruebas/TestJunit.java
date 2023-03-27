@@ -7,7 +7,6 @@ import paquete_prueba_1.EdadException;
 import paquete_prueba_1.GeneraDNIException;
 import paquete_prueba_1.Persona;
 
-
 public class TestJunit {
 	
 	@Test

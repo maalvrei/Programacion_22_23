@@ -24,8 +24,10 @@ public class Perro extends Animal {
 		return "nombre perro" + nombre;
 	}
 	
-	protected Object clone() throws CloneNotSupportedExcepcion {
-		
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		Perro p = new Perro (this.nombre);
+		return p;
 	}
 	
 }
