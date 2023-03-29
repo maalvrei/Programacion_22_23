@@ -29,13 +29,13 @@ public class Persona {
 		this.peso = peso;
 		this.altura = altura;
 	}
-	
-	public Persona (double peso, double altura) {
+
+	public Persona(double peso, double altura) {
 		this.peso = peso;
 		this.altura = altura;
 	}
-	
-	public Persona (int edad) {
+
+	public Persona(int edad) {
 		this.edad = edad;
 	}
 
@@ -57,28 +57,26 @@ public class Persona {
 					return error;
 				}
 			}
-			
-		}
-		
-		}
-		
-		public static double calculaImc() throws CalcularIMCException {
-			
-			try {
-				if (peso <5 | altura < 40) {
-					throw new CalcularIMCException ("No se cumplen los requisitos");
-				} else {
-					System.out.println("El IMC es " + peso / (altura * altura));
-				}
-				
-			}
-			 catch (Exception e) {
-				throw new CalcularIMCException ("Los datos no son correctos");
-			}
-			
-			return peso / (altura*altura);
+
 		}
 
+	}
+
+	public static double calculaImc() throws CalcularIMCException {
+
+		try {
+			if (peso < 5 | altura < 40) {
+				throw new CalcularIMCException("No se cumplen los requisitos");
+			} else {
+				System.out.println("El IMC es " + peso / (altura * altura));
+			}
+
+		} catch (Exception e) {
+			throw new CalcularIMCException("Los datos no son correctos");
+		}
+
+		return peso / (altura * altura);
+	}
 
 	public boolean esMayorDeEdad() throws EdadException {
 		if (edad > 0) {
@@ -140,7 +138,7 @@ public class Persona {
 		int resto = 0;
 		try {
 			dniNumerico = Integer.parseInt(dni);
-			if(dni.length()!=8) {
+			if (dni.length() != 8) {
 				throw new GeneraDNIException("La longitud del DNI no es correcta");
 			} else {
 				String letras = "TRWAGMYFPDXBNJZSQVHLCKE";
@@ -153,7 +151,7 @@ public class Persona {
 		} catch (NumberFormatException e) {
 			throw new GeneraDNIException("Lo que se ha ingresado como DNI no cumple el formato adecuado.");
 		}
-		
+
 	}
 
 	public static void main(String args[]) {
