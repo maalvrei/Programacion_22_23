@@ -1,6 +1,7 @@
 package pruebas;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
+
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
@@ -52,18 +53,21 @@ public class TestEjercicioPersona {
 		Empleado e6 = e4;
 		Empleado e7 = (Empleado) e3.clone();
 
+		System.out.println(e7.getPersona());
+		System.out.println(e3.getPersona());
+		assertFalse(e7.getPersona()==e3.getPersona(),"Debería ser false");
 		// e1 == e2? false
-		assertFalse(e1.equals(e2), "Debería ser false");
+		assertFalse(e1 == e2, "Debería ser false");
 		// e1 == e3? false
-		assertFalse(e1.equals(e3), "Debería ser false");
+		assertFalse(e1 == e3, "Debería ser false");
 		// e1 == e4? false
-		assertFalse(e1.equals(e4), "Debería ser false");
+		assertFalse(e1 == e4, "Debería ser false");
 		// e1 == e5? false
-		assertFalse(e1.equals(e5), "Debería ser false");
-		// e1 == e6? false
-		assertFalse(e1.equals(e6), "Debería ser false");
+		assertFalse(e1 == e5, "Debería ser false");
+		// e6 == e4 false
+		assertTrue(e4 == e6, "Debería ser true");
 		// e3 == e7? true
-		assertTrue(e3.equals(e7), "Debería ser true");
+		assertFalse(e3 == e7, "Debería ser true");
 		// e1.equals(e2)? false
 		assertFalse(e1.equals(e2), "Debería ser false");
 		// e1.equals(e3)? false

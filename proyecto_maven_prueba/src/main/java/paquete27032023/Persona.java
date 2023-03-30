@@ -47,9 +47,9 @@ public class Persona {
 		direccion = d;
 	}
 
-	public String toString() {
+	/**public String toString() {
 		return "Mi nombre es " + nombre + " y mi edad es" + edad + " y mi direccion es " + direccion;
-	}
+	}*/
 
 	@Override
 	public boolean equals(Object obj) {

@@ -71,9 +71,9 @@ public class Persona {
 		return p1;
 	}
 
-	@Override
-	public String toString() {
+	//@Override
+	/**public String toString() {
 		return "Persona que se llama " + nombre + ", cuyos apellidos son " + apellidos + ", nacida en el año "
 				+ anyoDeNacimiento + ", conocida como " + apodo;
-	}
+	}*/
 }

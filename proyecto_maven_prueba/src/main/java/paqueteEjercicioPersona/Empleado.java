@@ -11,6 +11,11 @@ public class Empleado {
 		this.departamento = departamento;
 		this.persona = persona;
 	}
+	
+	public Empleado(int idEmpleado, String departamento) {
+		this.idEmpleado = idEmpleado;
+		this.departamento = departamento;
+	}
 
 	public Empleado(Empleado e) {
 		this.idEmpleado = e.idEmpleado;
@@ -44,22 +49,26 @@ public class Empleado {
 
 	@Override
 	public Object clone() throws CloneNotSupportedException {
-		Empleado e1 = new Empleado(this.idEmpleado, this.departamento, this.persona);
+		Empleado e1 = new Empleado(this.idEmpleado, this.departamento);
+		if (this.persona != null) {
+			e1.setPersona((Persona) this.persona.clone());
+		}
 		return e1;
 	}
 
 	@Override
 	public boolean equals(Object obj) {
 		Empleado e = (Empleado) obj;
-		if (this.idEmpleado == e.idEmpleado && this.departamento == e.departamento && this.persona == e.persona)
-			return true;
-		else
-			return false;
+		if (this.idEmpleado == e.idEmpleado && this.departamento == e.departamento)
+			if (e.persona != null) {
+				return this.persona.equals(e.persona);
+			}
+		return false;
 	}
 
-	@Override
+	/**@Override
 	public String toString() {
 		return "Empleado cuyo id es " + idEmpleado + ", que trabaja en el departamento " + departamento + ".\n"
 				+ persona.toString();
-	}
+	}*/
 }
