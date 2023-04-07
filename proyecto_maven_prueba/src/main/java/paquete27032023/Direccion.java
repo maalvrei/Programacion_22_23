@@ -45,10 +45,10 @@ public class Direccion {
 		Direccion d = (Direccion) obj;
 		return (this.calle == d.calle && this.numero == d.numero && this.cp == d.cp);
 	}
-	
+
 	@Override
 	public Object clone() throws CloneNotSupportedException {
-		Direccion d1 = new Direccion (this.calle, this.numero, this.cp);
+		Direccion d1 = new Direccion(this.calle, this.numero, this.cp);
 		return d1;
 	}
 

@@ -30,8 +30,13 @@
 	</classpathentry>
 	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
 		<attributes>
+<<<<<<< HEAD
 			<attribute name="maven.pomderived" value="true"/>
 			<attribute name="test" value="true"/>
+=======
+			<attribute name="test" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+>>>>>>> 27bfc6306c8cb3ef574a644edd692631ec017dca
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
