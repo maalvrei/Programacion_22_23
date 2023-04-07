@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item key="org.eclipse.jdt.ui.lastextjar" value="C:\Users\migue\Desktop\Repositorio_programación\Programacion_22_23\clases_propias"/>
+	<item key="org.eclipse.jdt.ui.last.selected.jre.kind2" value="2"/>
+	<item key="org.eclipse.jdt.ui.last.selected.execution.enviroment" value="JavaSE-19"/>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item key="group_libraries" value="true"/>
 		<item key="layout" value="2"/>
@@ -63,6 +65,6 @@
 		<item key="patterns" value="*"/>
 	</section>
 	<section name="ClasspathContainerSelectionPage">
-		<item key="index" value="1"/>
+		<item key="index" value="0"/>
 	</section>
 </section>
