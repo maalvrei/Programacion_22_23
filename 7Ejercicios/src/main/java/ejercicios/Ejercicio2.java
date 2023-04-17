@@ -14,14 +14,12 @@ public class Ejercicio2 {
 	static void rellena (int[] arr, int numParaGenerar) {
 		
 		int suma = 0;
-		int cantidad = 0;
 		for (int i = 0 ; i < numParaGenerar ; i++) {
 			int num = generarNumeroAleatorio();
 			arr[i] = num;
 			suma += num;
-			cantidad += 1;
 		}
-		System.out.println("La suma de los valores de todas las posiciones del array es de " + suma + "\nEl array tiene " + cantidad + " elementos");
+		System.out.println("La suma de los valores de todas las posiciones del array es de " + suma + "\nEl array tiene " + arr.length + " elementos");
 	}
 	
 	static void imprime (int[] arr, int tamanyoArray) {

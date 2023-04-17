@@ -25,7 +25,7 @@ public class Ejercicio4 {
 		boolean sonIguales1 = comparaArrays(arr1, arr2);
 		boolean sonIguales2 = comparaArrays(arr1, arr3);
 
-		if (sonIguales1) {
+		if (comparaArrays(arr1, arr2)) {
 			System.out.println("Los arrays arr1 y arr2 son iguales.");
 		} else {
 			System.out.println("Los arrays arr1 y arr2 no son iguales.");
