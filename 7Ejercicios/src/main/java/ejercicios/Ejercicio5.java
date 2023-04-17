@@ -10,5 +10,7 @@ public class Ejercicio5 {
 	        for (int i = 0; i < numeros.length; i++) {
 	            numerosInvertidos[i] = numeros[numeros.length - 1 - i];
 	        }
+	        
+	        
 	    }
 	}
