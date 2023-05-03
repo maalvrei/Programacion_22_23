@@ -63,9 +63,13 @@ public class Robot {
 		} else if (!(obj instanceof Robot)) {
 			return false;
 		} else {
-			Robot r = (Robot) obj;
-			boolean resultado = (this.name == r.name && this.clase == r.clase && this.model == r.model)? true : false;
-			return resultado;
+			if (this == obj)
+				return true;
+			else {
+				Robot r = (Robot) obj;
+				boolean resultado = (this.name == r.name && this.clase == r.clase && this.model == r.model)? true : false;
+				return resultado;
+			}
 		}
 	}
 	
