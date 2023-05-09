@@ -19,7 +19,7 @@ public class TestArray {
 	public static void imprimeArray(String[] arra) {
 		int i = 0;
 		for (String s: arra) {
-			System.out.println("Elemento " + i + " del array.");
+			System.out.println("Elemento " + i + " del array: " + s);
 			i++;
 		}
 	}

@@ -77,4 +77,6 @@ public class Robot {
 	public Object clone() throws CloneNotSupportedException {
 		return new Robot(this.name, this.model, this.clase);
 	}
-}
+
+	}
+
